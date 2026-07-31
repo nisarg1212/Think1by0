@@ -1,6 +1,6 @@
-# Think0by1: Multi-Agent Collaborative StateGraph Engine
+# Think1by0: Multi-Agent Collaborative StateGraph Engine
 
-Think0by1 is an asynchronous, high-performance **Multi-Agent Orchestration Platform** built with **Django**, **Django REST Framework (DRF)**, and **Django Q2**. 
+Think1by0 is an asynchronous, high-performance **Multi-Agent Orchestration Platform** built with **Django**, **Django REST Framework (DRF)**, and **Django Q2**. 
 
 Instead of relying on a single AI model's output or a rigid linear script, it implements an extensible **StateGraph Orchestration Engine**. Multiple LLM models (Gemini, NVIDIA Llama, and OpenRouter models) collaborate, evaluate, critique, and correct each other's drafts through structured peer-review cycles in the background, blending their collective strengths into a highly refined final answer.
 
