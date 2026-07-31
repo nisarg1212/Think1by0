@@ -65,7 +65,7 @@ sequenceDiagram
 ## 📂 Project Structure
 
 ```
-Think0by1/
+Think1by0/
 ├── .gitignore                      # Git ignore rules for Django, Python, OS, & IDEs
 ├── README.md                       # This project guide
 ├── DEVELOPER_GUIDE.md              # Detailed walkthrough of coding concepts
@@ -74,7 +74,7 @@ Think0by1/
 │   ├── manage.py                   # Django management CLI
 │   ├── db.sqlite3                  # Local SQLite database
 │   │
-│   ├── think0by_django_folder/     # Django configuration folder
+│   ├── think1by0_django_folder/     # Django configuration folder
 │   │   ├── settings.py             # App registrations, CORS, & Django Q cluster settings
 │   │   └── urls.py                 # Project-level URL patterns
 │   │
@@ -103,7 +103,7 @@ Think0by1/
 │           ├── graph_def.py        # Declarative GraphDefinition builder
 │           ├── engine.py           # execution logic runner
 │           ├── nodes.py            # Pure async node functions (draft, review, etc.)
-│           └── graph.py            # Concrete Think0by1 Graph & DB persistence hooks
+│           └── graph.py            # Concrete Think1by0 Graph & DB persistence hooks
 │
 └── Frontend/                       # Frontend application
     └── index.html                  # Dashboard UI with auto-polling & flashing status
@@ -115,7 +115,7 @@ Think0by1/
 
 ### 1. Clone the repository and navigate to Backend
 ```bash
-cd Think0by1/Backend
+cd Think1by0/Backend
 ```
 
 ### 2. Create and Activate Virtual Environment
@@ -131,7 +131,7 @@ pip install django djangorestframework django-cors-headers google-genai openai p
 ```
 
 ### 4. Configure Environment Variables
-Create a `.env` file in the root `Think0by1/` folder (or `Backend/` folder):
+Create a `.env` file in the root `Think1by0/` folder (or `Backend/` folder):
 ```env
 SECRET_KEY=your-django-secret-key
 GEMINI_API_KEY=AIzaSy...your_gemini_key

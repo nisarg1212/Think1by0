@@ -1,5 +1,5 @@
 """
-WSGI config for think0by_django_folder project.
+WSGI config for think1by0_django_folder project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'think0by_django_folder.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'think1by0_django_folder.settings')
 
 application = get_wsgi_application()

@@ -1,11 +1,11 @@
-# Think0by1: AI Agent Routing and Orchestration Platform
+# Think1by0: AI Agent Routing and Orchestration Platform
 
-Welcome to the **Think0by1** developer and AI agent instructions. This file acts as the project specification, directory guide, and development guidelines for this workspace.
+Welcome to the **Think1by0** developer and AI agent instructions. This file acts as the project specification, directory guide, and development guidelines for this workspace.
 
 ---
 
 ## 1. Project Overview
-**Think0by1** is an intelligent AI orchestration platform designed to route, coordinate, and evaluate LLM-based agents. The system utilizes a multi-agent backend architecture in Django to process user queries efficiently by:
+**Think1by0** is an intelligent AI orchestration platform designed to route, coordinate, and evaluate LLM-based agents. The system utilizes a multi-agent backend architecture in Django to process user queries efficiently by:
 1. **Routing** requests to the most appropriate agent or LLM based on task complexity, cost, latency, and capability.
 2. **Orchestrating** multi-step tasks across multiple backend agents (e.g., dividing a task into subtasks, passing context between agents).
 3. **Evaluating/Judging** the responses to ensure they meet quality, formatting, and correctness standards before sending them to the user.
@@ -15,7 +15,7 @@ Welcome to the **Think0by1** developer and AI agent instructions. This file acts
 ## 2. Directory Structure & File Map
 
 ```
-Think0by1/
+Think1by0/
 │
 ├── .gitignore                      # Git ignore rules for Django, Python, OS, & IDEs
 ├── AI_INSTRUCTIONS.MD              # This project guide and instruction sheet
@@ -24,7 +24,7 @@ Think0by1/
 │   ├── manage.py                   # Django CLI tool
 │   ├── db.sqlite3                  # Local SQLite database (ignored by Git)
 │   │
-│   ├── think0by_django_folder/     # Django configuration folder
+│   ├── think1by0_django_folder/     # Django configuration folder
 │   │   ├── settings.py             # Project settings (databases, apps, middleware)
 │   │   ├── urls.py                 # Core routing definitions
 │   │   └── wsgi.py / asgi.py       # WSGI/ASGI entrypoints
@@ -50,7 +50,7 @@ Think0by1/
 
 ## 3. High-Level Architecture & Workflow
 
-When a client makes a request to `Think0by1` backend:
+When a client makes a request to `Think1by0` backend:
 
 ```mermaid
 sequenceDiagram

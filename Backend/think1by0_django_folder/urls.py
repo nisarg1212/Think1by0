@@ -1,5 +1,5 @@
 """
-URL configuration for think0by_django_folder project.
+URL configuration for think1by0_django_folder project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/

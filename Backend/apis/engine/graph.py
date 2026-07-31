@@ -20,8 +20,8 @@ logger = logging.getLogger(__name__)
 # to update them cleanly across node executions
 _db_response_cache: Dict[tuple, ModelResponse] = {}
 
-def build_think0by1_graph() -> GraphDefinition:
-    """Assembles and returns the declarative Think0by1 orchestration graph."""
+def build_think1by0_graph() -> GraphDefinition:
+    """Assembles and returns the declarative Think1by0 orchestration graph."""
     graph = GraphDefinition()
     
     # 1. Register Nodes
@@ -41,7 +41,7 @@ def build_think0by1_graph() -> GraphDefinition:
 
 class OrchestrationGraph:
     """
-    Entry point for running the Think0by1 orchestration.
+    Entry point for running the Think1by0 orchestration.
     Instantiates environment resources (APIs, DB managers) and runs the Engine.
     """
     def __init__(self):
@@ -52,7 +52,7 @@ class OrchestrationGraph:
             'openrouter': OpenRouterAgent()
         }
         self.judge = ResponseJudge()
-        self.graph_def = build_think0by1_graph()
+        self.graph_def = build_think1by0_graph()
         self.engine = GraphEngine(self.graph_def)
 
     async def run(self, question_id: int) -> OrchestrationState:

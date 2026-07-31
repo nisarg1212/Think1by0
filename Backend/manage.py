@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'think0by_django_folder.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'think1by0_django_folder.settings'
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

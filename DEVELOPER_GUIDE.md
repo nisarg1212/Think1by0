@@ -1,6 +1,6 @@
-# Think0by1: Developer Guide & Tutorial
+# Think1by0: Developer Guide & Tutorial
 
-Welcome! This guide is designed to teach you the concepts behind the **Think0by1** project, explain how Django projects work, and walk you through how to implement each part of the codebase step-by-step.
+Welcome! This guide is designed to teach you the concepts behind the **Think1by0** project, explain how Django projects work, and walk you through how to implement each part of the codebase step-by-step.
 
 ---
 
@@ -20,7 +20,7 @@ Welcome! This guide is designed to teach you the concepts behind the **Think0by1
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It is structured around the **MVT (Model-View-Template)** pattern, but since we are building a backend API, we will focus on **Views** that return JSON responses rather than rendering HTML templates.
 
-*   **Django Project (`think0by_django_folder`):** The configuration root. It contains:
+*   **Django Project (`think1by0_django_folder`):** The configuration root. It contains:
     *   `settings.py`: Registers installed apps, database backends, and secret settings.
     *   `urls.py`: The entrypoint for routing URLs to specific apps.
 *   **Django App (`apis`):** A self-contained web application inside the project that performs a specific function (in our case, exposing the agent routing services).
@@ -58,7 +58,7 @@ OPENROUTER_API_KEY=your_key_here
 
 ## 3. Understanding the Architecture
 
-Think0by1 is designed as a **mixture-of-agents router**. Here is how the components communicate:
+Think1by0 is designed as a **mixture-of-agents router**. Here is how the components communicate:
 
 1.  **Client Request:** A front-end client posts a prompt to your Django API.
 2.  **Router:** Decides which model handles the prompt. For example:
@@ -199,7 +199,7 @@ class ChatView(APIView):
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 ```
 
-Register this view in `Backend/apis/urls.py` and configure `Backend/think0by_django_folder/urls.py` to route requests to it.
+Register this view in `Backend/apis/urls.py` and configure `Backend/think1by0_django_folder/urls.py` to route requests to it.
 
 ---
 
